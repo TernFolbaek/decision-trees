@@ -3,7 +3,9 @@
 ### compute_entropy(y):
 This function calculates the entropy of a set of binary labels (0s and 1s).
 It takes as input a numpy array y that indicates whether each example at a node is edible (1) or poisonous (0).
-The entropy is computed using the formula: (-p_1 * log2(p_1)) - ((1 - p_1) * log2(1 - p_1)), where p_1 represents the proportion of positive labels in y.
+The entropy is computed using the formula:
+$-p_1 \log_2(p_1) - (1 - p_1) \log_2(1 - p_1)$
+where $p_1$ represents the proportion of positive labels in y.
 The function returns the entropy value.
 
 ### split_dataset(X, node_indices, feature):
